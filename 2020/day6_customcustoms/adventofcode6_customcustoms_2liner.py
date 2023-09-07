@@ -1,0 +1,2 @@
+print('part 1:', sum([len(set(d.replace('\n',''))) for d in open('input.txt', 'r').read().split('\n\n')]))
+print('part 2:', sum([sum([d.count(a) == (d.strip().count('\n')+1) for a in set(d.replace('\n',''))]) for d in open('input.txt', 'r').read().split('\n\n')]))
